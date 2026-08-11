@@ -55,3 +55,21 @@ student_2 = Student("Katty", 50)
 
 print(student_1.get_grade())   # Pass
 print(student_2.get_grade())   # Fail
+
+
+# --- Dunder methods: __str__ controls what print() shows ---
+class CardboardCup:
+    def __init__(self, size, drink, price):
+        self.size = size
+        self.drink = drink
+        self.price = price
+
+    def __str__(self):
+        return f"--- Receipt ---\n{self.size} {self.drink}\nTotal: ${self.price:.2f}"
+
+
+cup = CardboardCup("Large", "Caramel Latte", 4.5)
+print(cup)
+# --- Receipt ---
+# Large Caramel Latte
+# Total: $4.50
