@@ -36,3 +36,22 @@ class Rectangle:
 my_rect = Rectangle(5, 3)
 print(my_rect.area())        # 15
 print(my_rect.perimeter())   # 16
+
+
+class Student:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+    def get_grade(self):
+        if self.score >= 60:
+            return "Pass"
+        else:
+            return "Fail"
+
+
+student_1 = Student("Sonia", 80)
+student_2 = Student("Katty", 50)
+
+print(student_1.get_grade())   # Pass
+print(student_2.get_grade())   # Fail
