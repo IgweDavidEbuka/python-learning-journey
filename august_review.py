@@ -3,7 +3,14 @@
 # For loops are used for fixed-size situations
 # While loops are used to perform an action based on a certaion condition being true
 # The order of operations inside a loop body genuinely matters — printing before updating versus updating before printing produces two completely different sequences, even though both are "valid" loops that run without crashing. This is worth sitting with, since it's an easy thing to get subtly wrong without any error ever appearing.
+# Break--> "There's no point continuing this loop at all," regardless of how many iterations are left.
+# Continue --> Use when you want to skip specific items, but the loop itself should keep going.
+# Pass --> This is used anywhere Python's syntax requires an indented block (like after a colon), but you don't have any code to put there yet — usually while you're still planning something out.
+# Return --> Returns an output of a function
+# exit() --> This stops the entire program, immediately, everywhere, not just one loop or one function.
 
+# T/L Note*: Break stops one loop. Return stops one function. Exit() stops the entire program, no matter how deeply nested you are in loops or functions when you call it.
+# T/L Note*: Whenever continue is involved, anything that's supposed to happen "no matter what" — especially updating a loop's counter — has to sit before the continue line, not after it.
 # While loops
 i = 10
 while i > 0:
@@ -28,9 +35,26 @@ while state == False:
         state = True
     else:
         print(test)
-        
+
+counter = 0
+while counter <= 25:
+    counter += 1
+    if counter % 4 == 0:
+        continue
+    if counter >= 25:
+        break
+    print(counter)
+
 # For Loops
 
+
+for num in range(1, 21):
+    if num % 3 == 0:
+        continue
+    if num > 15:
+        break
+    print(num)
+    
 for i in range(5):
     for j in range(3):
         print(i, j)
@@ -58,6 +82,16 @@ words = ["cat", "elephant", "dog", "hippopotamus"]
 for word in words:
     if len(word) > 4:
         print(word)
+
+fruits = ["apple", "banana", "kiwi", "watermelon", "fig"]
+
+for fruit in fruits:
+    if len(fruit) < 4:
+        continue
+    if len(fruit) > 8:
+        break
+    print(fruit)
+    
         
 # FUNCTIONS #
 
