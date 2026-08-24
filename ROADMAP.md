@@ -1,5 +1,7 @@
 # 6-Month Python Roadmap
 
+> **Status update:** Month 1 content is complete as of Day 9, covering the original plan plus significant extra depth pulled in from work material (inheritance/MRO, dunder methods, operator overloading, decorators, deque performance, real-world assessment debugging, git conflict resolution). "Months" here are content phases, not literal calendar months — Month 1 took roughly 9 working sessions across about three weeks. Currently doing a spaced review week across all of Month 1 before starting Month 2.
+
 **Starting point:** Comfortable with core syntax, control flow (`if`/`while`/`for`), functions (including `*args`/`**kwargs`), string handling, and scope (LEGB). Debugging instinct is a real strength — self-correction has been consistently fast. Currently enrolled in an employer-run Python program that starts from basics but ramps up quickly.
 
 **Direction:** Data Analysis foundation first — this overlaps with the current work program and keeps AI/ML or backend development open as a later branch, once more is known about what's genuinely interesting.
