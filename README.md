@@ -7,14 +7,15 @@ Month 1 fundamentals complete. Currently in a spaced review week (loops/function
 
 ## 🗂️ Structure
 
+```
 python-learning-journey/
 ├── README.md
 ├── ROADMAP.md
-├── 01-fundamentals/ # core Python exercises and notes
-├── 02-data-analysis/ # pandas, numpy, SQL, visualization work
-├── projects/ # standalone mini-projects and the capstone
-└── daily-notes/ # short logs of what was learned each session
-
+├── 01-fundamentals/       # core Python exercises and notes
+├── 02-data-analysis/      # pandas, numpy, SQL, visualization work
+├── projects/              # standalone mini-projects and the capstone
+└── daily-notes/           # short logs of what was learned each session
+```
 
 ## 🎯 Goals
 - Build a genuinely solid, professional-level Python foundation
