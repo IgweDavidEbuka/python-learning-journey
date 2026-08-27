@@ -25,3 +25,20 @@ class Bird(Animal):
     
 bird = Bird()
 print(bird.make_sound())
+
+class SpaceMarine:
+    def __init__(self, Aliance):
+        self.Aliance = Aliance
+    
+    def __str__(self):
+        return f"Name: {self.name} | Alliegence: {self.Aliance}"
+    
+class AThousandSons(SpaceMarine):
+    def __init__(self, Aliance, name):
+        super().__init__(Aliance)
+        self.name = name
+    
+
+Marine1 = AThousandSons("Chaos", "Batiatus")
+print(Marine1)
+
