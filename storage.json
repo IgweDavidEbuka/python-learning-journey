@@ -1,0 +1,26 @@
+{
+    "Terissa": {
+        "health": 100,
+        "damage": 100,
+        "weapon": "Ragnorock",
+        "gender": "Female",
+        "runes": [
+            "HP Bonus",
+            "Def Bonus",
+            "Speed Bonus"
+        ],
+        "affinity": "Earth"
+    },
+    "Hungirv": {
+        "health": 100,
+        "damage": 100,
+        "weapon": "Tupnir's edge",
+        "gender": "Male",
+        "runes": [
+            "Element Damage",
+            "Speed Bonus",
+            "HP Bonus"
+        ],
+        "affinity": "Chaos"
+    }
+}
